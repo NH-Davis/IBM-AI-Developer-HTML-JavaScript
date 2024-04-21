@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>N Hartley - Portfolio Website </title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <br> <!-- Line break added here -->
+      <div id="home">
+        <div class="profile_name">
+          N Hartley
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          nhh@cdemail.com
+          <br> <!-- Line break added here -->
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1-012-345-6789
+          <br> <!-- Line break added here -->
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="profile_image.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm N Hartley! <img src="html_finalprojimages/waving-hand.png" width="50px"/>
+          </h1>
+          <p>
+            I am a senior fintech and private credit executive. <br>
+            I have worked in the financial services and technology industry for two decades. <br>
+            I am an avid student of AI, Machine Learning and Data Science topics.<br>
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="python.png"/>
+          <h3>Python</h3>
+          <p>10 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="SQL.png"/>         
+          <h3>SQL</h3>
+          <p>5 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="R.png"/>
+          <h3>R</h3>
+          <p>7 years experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="Tenssorflow.png"/>
+          <h3>Tensor Flow</h3>
+          <p>3 years experience</p>
+        </div>       
+
+        <div class="skill">
+          <img src="Keras.png"/>
+          <h3>Keras</h3>
+          <p>3 years experience</p>
+        </div>       
+
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h4>Computer Vision Model</h4>
+            <ul>
+              <li>Developed and deployed an image classifier model utilizing a ResNet convolutional neural network using IBM Watson</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h4>Supervised Learning Classification Model</h4>
+            <ul>
+              <li>Developed and deployed a Supervised Learning model leveraging Keras to categorize gym users into different target audiences for marketing</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h4>Clustering Model</h4>
+            <ul>
+              <li>Created an unsupervised clustering model to identify stratifications in travel spending on travel website</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          N is a standout in the fintech industry, combining deep understanding 
+          of private credit with exceptional AI and machine learning expertise,
+          making substantial improvements to our technological capabilities.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Having worked closely with N, I can attest to their profound impact 
+          on our projects. N's programming skills are top-notch, and his innovative
+          use of AI is truly transformative for our business strategies.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          N's leadership in integrating advanced machine learning techniques into our
+          financial products has not only enhanced our offerings but also set new  
+          standards in the fintech sector. Their expertise is remarkable and highly
+          respected.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button type="button" id="recommend_btn" onClick="addRecommendation()">Submit</button>
+
+            
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+    <div class="popup flex_center" id="popup" style="display:none;">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3 id="popup-message"></h3>  <!-- Now correctly identified for JavaScript targeting -->
+      <button onclick="hidePopup()">Ok</button> <!-- Correct function call to hide the popup -->
+  </div>
+  
+
+  </body>
+</html>
